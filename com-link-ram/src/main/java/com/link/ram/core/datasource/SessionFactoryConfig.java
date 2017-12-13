@@ -2,9 +2,7 @@ package com.link.ram.core.datasource;
 
 import javax.sql.DataSource;
 
-import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -43,11 +41,6 @@ public class SessionFactoryConfig implements TransactionManagementConfigurer {
 		ResourcePatternResolver resolver=new PathMatchingResourcePatternResolver();
 		sqlSessionFactoryBean.setMapperLocations(resolver.getResources(XMLPATH));
 		return sqlSessionFactoryBean;
-	}
-
-	@Bean
-	public SqlSessionTemplate sqlSessionTemplate(SqlSessionFactory sqlSessionFactory) {
-		return new SqlSessionTemplate(sqlSessionFactory);
 	}
 
 	@Bean
