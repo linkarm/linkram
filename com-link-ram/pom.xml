@@ -21,6 +21,8 @@
 		<version>1.5.2.RELEASE</version>
 		<relativePath/>
 	</parent>
+	
+	<modules></modules>
 	    	
     <dependencies>
         <dependency>
