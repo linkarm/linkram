@@ -24,7 +24,8 @@
 	
 	<modules>
 		<module>project-main</module>
-    	<module>moudule-socket</module>
+    	<!-- <module>module-socket</module> -->
+    	<module>module-netty</module>
   	</modules>
   	
   	<dependencies>
