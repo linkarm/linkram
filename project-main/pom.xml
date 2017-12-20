@@ -2,7 +2,6 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>project-main</groupId>
   <artifactId>project-main</artifactId>
   <packaging>jar</packaging>
 
@@ -22,13 +21,10 @@
 
     <dependencies>
     	<dependency>
-    		<groupId>com-link-ram</groupId>
-    		 <artifactId>moudule-socket</artifactId>
+    		 <groupId>com-link-ram</groupId>
+    		 <artifactId>module-netty</artifactId>
     		 <version>0.0.1-SNAPSHOT</version>
     	</dependency>
-    	
-     
-		
 		<!-- MySql数据库驱动 -->
 	   <dependency>
 			<groupId>mysql</groupId>
@@ -56,6 +52,7 @@
    </dependencies>
    	    
 	<build>
+		<finalName>project-main-1.0</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
