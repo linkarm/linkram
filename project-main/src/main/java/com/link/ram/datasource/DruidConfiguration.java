@@ -1,4 +1,4 @@
-package com.link.ram.core.datasource;
+package com.link.ram.datasource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,8 +20,6 @@ import com.alibaba.druid.support.http.WebStatFilter;
 public class DruidConfiguration {
 
     private static final Logger logger = LoggerFactory.getLogger(DruidConfiguration.class);
-
-    private static final String DB_PREFIX = "spring.datasource";
 
     @Bean
     public ServletRegistrationBean druidServlet() {

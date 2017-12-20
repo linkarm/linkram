@@ -1,4 +1,4 @@
-package com.link.ram.core.datasource;
+package com.link.ram.datasource;
 
 import javax.sql.DataSource;
 
